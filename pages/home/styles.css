@@ -1,0 +1,286 @@
+header {
+  background-color: var(--gray-800);
+  height: 9.8rem;
+
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header > div {
+  width: min(90%, 1122px);
+  margin: 0 auto;
+  height: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: fit-content;
+}
+
+header .logo > h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+header .logo > h1 > span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: block;
+}
+
+header input {
+  flex: 2;
+}
+
+header .shoppingCart {
+  background-color: var(--green-500);
+  padding: 1.2rem 0;
+  border-radius: 5px;
+  min-width: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  flex: 0.6;
+}
+
+header .shoppingCart:focus-visible {
+  background-color: var(--green-300);
+}
+
+header .shoppingCart img {
+  width: 2.9rem;
+  height: 2.9rem;
+}
+
+header .signOut {
+  display: flex;
+  align-items: center;
+}
+
+header .signOut img {
+  display: flex;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+header input {
+  height: 100%;
+}
+
+#hero {
+  width: min(93%, 112rem);
+  height: 26rem;
+  padding: 0 1rem;
+
+  margin: 18.8rem auto 9rem;
+
+  border-radius: 8px;
+  background: linear-gradient(180deg, #313138 0%, #2e2e35 0.01%, #202024 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#hero img {
+  width: 20rem;
+  height: 20rem;
+}
+
+#hero h1 {
+  font-family: "Baloo 2", cursive;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+article {
+  width: min(90%, 1122px);
+  margin: 0 auto 4rem;
+}
+
+article > h2 {
+  font-family: "Baloo 2", cursive;
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25.6rem, 1fr));
+  grid-auto-rows: min-content;
+  row-gap: 4rem;
+  column-gap: 3.2rem;
+}
+
+.card {
+  background-color: var(--gray-800);
+  border-radius: 6px 36px;
+  padding: 0 2rem 2rem;
+  text-align: center;
+}
+
+.card > img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: -2rem auto 2rem;
+}
+
+.card h3 {
+  font-family: "Baloo 2", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card p {
+  font-size: 1.4rem;
+  color: var(--gray-400);
+  margin: 1rem 0 1.5rem;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.card span {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.card span > strong {
+  font-family: "Baloo 2", cursive;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.card form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.card form div:has(input:focus-visible) {
+  outline: transparent;
+  box-shadow: 0 0 0 2px var(--green-500);
+  border-radius: 8px;
+}
+
+.card label {
+  position: relative;
+  background-color: var(--gray-700);
+  color: var(--gray-400);
+
+  padding: 0.8rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card label:has(input:checked) {
+  background-color: var(--green-300);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card .radios {
+  display: flex;
+  gap: 0.8rem;
+}
+
+input.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.card button {
+  background-color: var(--green-500);
+
+  height: 3.8rem;
+  padding: 0 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card button:hover,
+.card button:focus-visible {
+  background-color: var(--green-300);
+}
+
+.card button img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+@media (max-width: 470px) {
+  .cardList {
+    column-gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(20.6rem, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .cardList {
+    grid-template-columns: 25.6rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  #hero {
+    flex-direction: column;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+}
+@media (max-width: 520px) {
+  header .logo h1,
+  header .shoppingCart span {
+    display: none;
+  }
+  header > div {
+    gap: 2rem;
+  }
+}

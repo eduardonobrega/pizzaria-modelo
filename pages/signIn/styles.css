@@ -1,0 +1,67 @@
+div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+form {
+  background-color: var(--gray-800);
+
+  width: min(95%, 47.6rem);
+  padding: 5.4rem 6.4rem;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+form > button {
+  background-color: var(--green-500);
+  color: var(--white);
+  font-weight: 700;
+
+  margin-top: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 8px;
+  transition: background-color 200ms;
+
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+input {
+  margin-top: 0.8rem;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+  background-color: var(--green-300);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  align-self: center;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

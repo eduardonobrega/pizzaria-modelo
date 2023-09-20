@@ -1,0 +1,129 @@
+header {
+  background-color: var(--gray-800);
+  height: 9.8rem;
+  display: flex;
+  align-items: center;
+}
+
+header > div {
+  width: min(90%, 1122px);
+  margin: 0 auto;
+  height: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: fit-content;
+}
+
+header .logo > h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+header .logo > h1 > span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: block;
+}
+
+header .signOut {
+  display: flex;
+  align-items: center;
+}
+
+header .signOut img {
+  display: flex;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+main {
+  width: min(95%, 800px);
+  margin: 6rem auto 0;
+  padding-bottom: 4rem;
+}
+
+section {
+  display: flex;
+  gap: 1.6rem;
+}
+
+section > img {
+  width: 6rem;
+  height: 6rem;
+}
+
+section h2 {
+  color: var(--orange);
+  font-family: "Baloo 2", cursive;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 130%;
+}
+
+section h2 strong {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--gray-800);
+  padding: 4rem;
+  margin-top: 6rem;
+  border-radius: 6px 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Baloo 2", cursive;
+  font-size: 2.4rem;
+  font-weight: 700;
+  width: 18rem;
+  margin: 0 auto 1.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+h3 span {
+  background-color: var(--purple);
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.card p {
+  line-height: 130%;
+  color: var(--gray-400);
+}
+
+#address {
+  max-width: 40ch;
+}
+
+.card strong {
+  font-weight: 700;
+  color: var(--gray-100);
+  opacity: 0.8;
+}

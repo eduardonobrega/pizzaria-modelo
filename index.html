@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/signIn/styles.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Login | Pizzaria Modelo</title>
+  </head>
+  <body>
+    <form action="/pages/home/">
+      <div>
+        <img src="./assets/pizza.svg" alt="Uma fatia de pizza Verde" />
+        <h1>Faça login</h1>
+      </div>
+
+      <label for="email"
+        >Email
+        <input type="email" id="email" placeholder="exemplo@email.com" required/>
+      </label>
+
+      <label for="password"
+        >Senha
+
+        <input
+          type="password"
+          id="password"
+          placeholder="No mínimo 6 caracteres"
+          minlength="6"
+          required
+        />
+      </label>
+
+      <button>Entrar</button>
+      <a href="./pages/signUp">Criar uma conta</a>
+    </form>
+  </body>
+</html>
